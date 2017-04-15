@@ -31,8 +31,16 @@ h2 {
  text-align:center;
 }
 
-div{
+h1:hover {
+  color: slategrey;
+}
+
+div {
+
 
   margin-left: 350px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
 }
+
