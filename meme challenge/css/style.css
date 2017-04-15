@@ -31,25 +31,27 @@ h2 {
  text-align:center;
 }
 
+button{
+  display: block;
+	margin: auto;
+	width: 2%;
+}
+
 h1:hover {
-  
+
   color: slategrey;
 
 }
 
 img {
-
-	display:block;
+	display: block;
 	margin: auto;
 	width: 40%;
 }
 
-
 button {
-	
+
 	margin: auto;
 	display: block;
 
 }
-
-
