@@ -1,7 +1,10 @@
 body {
-  color: #bd7eb1;
+  color: #ffffff;
   font-family: 'Playfair Display', serif;
-  background-color: skyblue; /* Sanity Check! */
+  background-image: url("../img/trinitylibrary.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -9,7 +12,17 @@ h1 {
   text-align: center;
 }
 
-h1:hover { 
+h1:hover {
     color: slategrey;
 }
 
+h2 {
+  text-align: center;
+}
+
+.slideshow-content div {
+ margin: 0px auto; // center
+ width:1100px;
+ height:500px;
+ text-align:center;
+}
