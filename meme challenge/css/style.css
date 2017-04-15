@@ -32,15 +32,15 @@ h2 {
 }
 
 h1:hover {
+  
   color: slategrey;
+
 }
 
-div {
+img {
 
-
-  margin-left: 350px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-
+	display:block;
+	margin: auto;
+	width: 40%;
 }
 
