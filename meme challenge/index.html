@@ -24,7 +24,7 @@
 
 
   <div class= "slideshow-content container">
-    
+
     <img class="mySlides" src="img/image.jpg">
     <img class="mySlides" src="img/image02.jpg">
     <img class="mySlides" src="img/image03.jpg">
@@ -32,7 +32,7 @@
 
     <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
     <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-  
+
   </div>
 
 <script>
@@ -47,23 +47,18 @@ function plusDivs(n) {
 function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1} 
+    if (n > x.length) {slideIndex = 1}
     if (n < 1) {slideIndex = x.length} ;
     for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
+        x[i].style.display = "none";
     }
-    x[slideIndex-1].style.display = "block"; 
+    x[slideIndex-1].style.display = "block";
 }
 
 </script>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IUAF3abGY2M" frameborder="0" allowfullscreen></iframe>
-  
-=======
 
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/IUAF3abGY2M" frameborder="0" allowfullscreen></iframe>
->>>>>>> origin/master
 
 <h2>
       Heed mine words,<br>
@@ -88,6 +83,8 @@ function showDivs(n) {
   <br>
 </p>
 
+    <iframe width="280" height="150" src="https://www.youtube.com/embed/IUAF3abGY2M" frameborder="0" allowfullscreen></iframe>
+    <p><em>Some music for your listening pleasure.</em></p>
 
 </body>
 </html>
