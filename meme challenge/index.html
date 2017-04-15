@@ -16,15 +16,50 @@
     <script src="scripts/app.js"></script>
   </head>
   
-  <h1>Classical Meme Coding Challenge</h1>
+<h1>Classical Meme Coding Challenge</h1>
 
-  <body>
+<body>
 
+<h2 class = "slideshow"></h2>
+
+  <div class= "slideshow-content container">
+    
+    <img class="mySlides" src="http://memecrunch.com/meme/BOXTJ/cash-me-outside/image.jpg">
+    <img class="mySlides" src="http://i3.kym-cdn.com/photos/images/original/000/874/621/6cc.jpg">
+    <img class="mySlides" src="http://i2.kym-cdn.com/photos/images/original/001/189/316/9b3.jpg">
+    <img class="mySlides" src="http://i1.kym-cdn.com/photos/images/original/000/777/226/0c9.jpg">
+
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
   
-  
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/IUAF3abGY2M" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+<script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+
+</script>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IUAF3abGY2M" frameborder="0" allowfullscreen></iframe>
   
 
 
-  </body>
+
+</body>
 </html>
