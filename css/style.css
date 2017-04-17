@@ -1,10 +1,29 @@
 body {
-  color: #bd7eb1;
-  font-family: Helvetica, Arial, sans-serif;
-  background-color: skyblue; /* Sanity Check! */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-h1 {
-  margin-top: 100px;
+.card {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid gray;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   text-align: center;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.card img{
+  border-radius: 50%;
+}
+
+.card h1{
+ margin-bottom: 4px;
+}
+
+.card h2{
+ margin-top: 0;
+ font-weight: normal;
+  color: gray;
 }
