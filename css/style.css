@@ -2,6 +2,14 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
+
 .card {
   width: 300px;
   margin-left: auto;
@@ -26,4 +34,16 @@ body {
  margin-top: 0;
  font-weight: normal;
   color: gray;
+}
+
+.card p{
+  text-align: justify;
+}
+
+.line{
+  height: 200px;
+  width: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 5px solid gray;
 }
