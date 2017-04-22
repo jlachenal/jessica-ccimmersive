@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <title>Joseph Ducreux and the Archaic Rap</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- VENDOR SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+    <!-- APPLICATION SCRIPTS -->
+    <script src="scripts/app.js"></script>
+  </head>
+
+<body>
+
+    <h1>Joseph Ducreux and the Archaic Rap: a Story Told in Too Many Words</h1>
+
+    <div class="row">
+      <div class="column">
+        <img src="img/image.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="img/image02.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="img/image03.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="img/image04.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+            <img src="img/image.jpg" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+            <img src="img/image02.jpg" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+            <img src="img/image03.jpg" style="width:50%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+            <img src="img/image04.jpg" style="width:50%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <div class="column">
+          <img class="demo" src="img/image.jpg" onclick="currentSlide(1)">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="img/image02.jpg" onclick="currentSlide(2)">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="img/image03.jpg" onclick="currentSlide(3)">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="img/image04.jpg" onclick="currentSlide(4)">
+        </div>
+      </div>
+    </div>
+
+    <script>
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+<h2>
+      Heed mine words,<br>
+      dearest colleagues.<br>
+      <br>
+      Whether thoust worn a beret the color of raspberries,<br>
+      the kind not too unlike that which one would expect from a charity shoppe, or<br>
+      Whether thoust valiantly venture<br>
+      to a location where no homo sapiens hath ventured in the past,<br>
+      <br>
+      Thine words be meme’d here<br>
+      before the visage of one<br>
+      Joseph Ducreux<br>
+</h2>
+
+<img src="img/walking.gif">
+
+<p>
+  In the immortal pantheon of what has come to be known the "Classical Art Meme,” the “Joseph Ducreux Archaic Art Rap” stands as one of the finest examples of the past meeting the very interesting present.<br>
+  <br>
+  The meme began with a self-portrait of the artist, which presents Ducreux with an incredibly beguiling sneer and smile. His right hand is raised in the perennial favorite hand gesture known as the “finger gun,” suggesting that he knows the viewer and is greeting them as a personal friend. Seeing as how Ducreux died shortly before the introduction of the photographs, it stands to reason that Ducreux likely physically posed for this photo and held this incredible expression for quite some time.<br>
+  <br>
+  Fast forward to 2009, when Ducreux’s image was “re-found” and meme’d, with the words, “Disregard Females, Acquire Currency” applied to it. The words were a reference to Notorious B.I.G.’s 1995 hit “F*ck B*tches, Get Money.” Since then, variations of the Ducreux meme have been popping up with brand new rap lyrics translated into the “olde English” voice.<br>
+  <br>
+</p>
+
+    <iframe width="280" height="150" align="center" src="https://www.youtube.com/embed/IUAF3abGY2M" frameborder="0" allowfullscreen></iframe>
+    <p><em>Some music for your listening pleasure.</em></p>
+
+</body>
+</html>
