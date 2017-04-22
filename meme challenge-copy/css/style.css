@@ -8,6 +8,23 @@ body {
   text-shadow: 2px 2px #000000;
 }
 
+.wrapper {
+    height: 100vh;
+    display: flex;
+
+    /* Direction of the items, can be row or column */
+    flex-direction: column;
+}
+
+header,
+footer {
+    height: 100px;
+}
+
+main {
+    flex: 1;
+}
+
 h1 {
   margin-top: 100px;
   text-align: center;
@@ -90,6 +107,14 @@ img {
   right: 25px;
   font-size: 35px;
   font-weight: bold;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+
+    /* Direction of the items, can be row or column */
+    flex-direction: column;
 }
 
 .close:hover,
